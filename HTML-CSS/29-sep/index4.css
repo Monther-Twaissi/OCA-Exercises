@@ -1,0 +1,39 @@
+header {
+  font-size: 25PX;
+  font-weight: bold;
+}
+
+.text1 {
+  color: blue;
+}
+
+.link1 {
+  color: orange;
+  font-size: 20px;
+}
+
+.link2 {
+  color: orange;
+
+}
+
+.link3 {
+  color: red;
+  font-weight: bold;
+
+}
+
+.list1 {
+  color: blue;
+}
+
+.link4 {
+  color: red;
+  font-weight: bold;
+
+
+}
+
+.link5 {
+  color: red;
+}

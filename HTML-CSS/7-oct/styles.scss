@@ -1,0 +1,50 @@
+$box-colores:orange;
+$display:grid;
+$gridcol:repeat(12, 1fr);
+$gridraw:repeat(6, 1fr);
+$gap: 0.75em;
+$text-size:40px;
+$container-hight:100%;
+$container-width:100%;
+$center:center;
+$top-padding:1em;
+$font-color:white;
+$area:grid-area;
+$nomargin:0px;
+
+.container {
+  width: $container-width;
+  height: $container-hight;
+  display: $display;
+  grid-gap: $gap;
+  margin: $nomargin;
+}
+
+.box {
+  color: $font-color;
+  padding: $top-padding;
+  text-align: $center;
+  font-size: $text-size;
+  background-color: $box-colores;
+}
+
+.box:nth-child(1) {
+  grid-column: span 12;
+}
+
+.box:nth-child(2),
+.box:nth-child(3) {
+  grid-column: span 6;
+}
+
+.box:nth-child(n+4):nth-child(-n+6) {
+  grid-column: span 4;
+}
+
+.box:nth-child(n+7):nth-child(-n+10) {
+  grid-column: span 3;
+}
+
+.box:nth-child(n+11):nth-child(-n+16) {
+  grid-column: span 2;
+}

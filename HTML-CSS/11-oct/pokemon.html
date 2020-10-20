@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flareon</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    .nav {
+      width: 100vw;
+      height: 4em;
+      background-color: rgb(228, 151, 52);
+      margin-top: 0;
+      position: fixed;
+      top: 0;
+    }
+
+    .nav-list {
+      font-size: 1.5em;
+      list-style-type: none;
+      display: inline-block;
+
+    }
+
+    .nav-tem {
+      display: inline;
+      margin-right: 1.5em;
+    }
+
+    .header-text {
+      margin-bottom: 1em;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100vw;
+      /* grid-template-columns: 50vw;
+      grid-template-rows: 5em; */
+      background-color: rgba(197, 177, 109, 0.637);
+    }
+
+    .home {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+
+    .info {
+      margin-left: 3em;
+      border: 4px solid rgb(228, 151, 52);
+      padding: 1em 5em;
+    }
+
+    .info-header {
+
+      margin-bottom: 4em;
+      font-size: 2.5em;
+    }
+
+    p {
+      font-size: 2em;
+      padding: 1em;
+    }
+
+    .profile {
+      width: 25vw;
+      padding: 1em;
+      margin-left: 5em;
+      border: 4px solid rgb(228, 151, 52);
+      border-radius: 5px;
+      align-items: center;
+
+    }
+
+    .evo {
+      display: flex;
+      flex-direction: column;
+      width: 25vw;
+      background-color: rgb(231, 223, 223);
+      border: rgb(228, 151, 52) 4px solid;
+      border-radius: 5px;
+      margin-left: 7em;
+      margin-top: 1.5em;
+      align-items: center;
+    }
+
+    .video {
+      align-items: center;
+      margin: auto;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="container">
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-tem">Profile</li>
+        <li class="nav-tem">Evolution</li>
+        <li class="nav-tem">More</li>
+      </ul>
+    </nav>
+    <h1 style="margin-left: 45%;font-size: 2.5em; margin-bottom: 2em;padding-top: 2em;">
+      Flareon</h1>
+
+    <main class="home">
+      <section class="evo">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png" alt="">
+        <h1 class="header-text">Pokedex NO: 136 </h1>
+        <img src="" alt="">
+        <p class="sub-text">Once it has stored up enough heat, this <br> Pokémon’s body temperature can reach <br> up to
+          1,700 degrees Fahrenheit.</p>
+      </section>
+      <section class="evo">
+        <h1 class="info-header">Basic information</h1>
+        <p>hieght: 2.11 inch</p>
+        <p>weight: 55.1 ibs</p>
+        <p>Category: flame</p>
+        <p>Abilities: flash fire</p>
+      </section>
+      <section class="evo"
+        style="margin-left: 6.7em; padding: 1em 2em; border: rgb(228, 151, 52) 4px solid; padding-left: 6em; width: 20em;">
+        <h1>Basic Form</h1>
+        <div class="evo1"> <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png" alt="">
+          <h1 class="header-text">Pokedex NO: 133 </h1>
+
+          <p class="sub-text">It has the ability to alter the composition <br> of its body to suit its surrounding
+            environment.</p>
+        </div>
+      </section>
+
+
+      <section class="evo">
+        <h2>EVO1: Jolteon</h2>
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/135.png" alt="">
+        <h1 class="header-text">Pokedex NO: 135 </h1>
+        <img src="" alt="">
+        <p class="sub-text">Once it has stored up enough heat, this <br> Pokémon’s body temperature can reach <br> up to
+          1,700 degrees Fahrenheit.</p>
+      </section>
+      <section class="evo">
+        <h2> EVO2: Umbreon</h2>
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/197.png" alt="">
+        <h1 class="header-text">Pokedex NO: 197 </h1>
+        <img src="" alt="">
+        <p class="sub-text">Once it has stored up enough heat, this <br> Pokémon’s body temperature can reach <br> up to
+          1,700 degrees Fahrenheit.</p>
+      </section>
+      <section class="evo">
+        <h2>EVO3: Leafeon</h2>
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/470.png" alt="">
+        <h1 class="header-text">Pokedex NO: 186 </h1>
+        <img src="" alt="">
+        <p class="sub-text">Once it has stored up enough heat, this <br> Pokémon’s body temperature can reach <br> up to
+          1,700 degrees Fahrenheit.</p>
+      </section>
+    </main>
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_22O7CZaWrc" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+  <footer class="more"></footer>
+
+</body>
+
+</html>

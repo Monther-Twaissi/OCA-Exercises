@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+    integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+    body {
+      margin-left: 1em;
+      margin-top: 2em;
+    }
+
+    .form-control {
+      width: 98vw;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <div class="mb-3">
+      <label for="firstName" class="form-lable"><strong> First name:</strong></label><br>
+      <input type="text" id="firstname" name="firstname" class="form-control"><br>
+      <label for="lastName" class="form-lable"><strong> Last name:</strong></label><br>
+      <input type="text" id="firstname" name="lasttname" class="form-control">
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">Male</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">Female</label>
+    </div><br> <br>
+    <div class="form-group col-12">
+      <label for="dateOfBirth" class="col-2 col-form-label"><strong> Date of Birth:</strong></label>
+      <div class="col-10">
+        <input class="form-control" type="date" value="mm.dd.yy" id="Date">
+      </div>
+      <div class="btn "></div><br>
+
+      <button type="submit" class="btn btn-primary">Add</button>
+
+
+    </div>
+
+    <form></form>
+
+
+
+</body>
+
+</html>

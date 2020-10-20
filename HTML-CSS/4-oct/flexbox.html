@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercise #3 flexBox</title>
+  <style>
+    @media(min-width:768px) {
+      .container {
+        display: flex;
+      }
+    }
+
+    .container {
+      display: flex;
+    }
+
+    p {
+      position: relative;
+      text-align: center;
+      top: 40vh;
+
+
+    }
+
+    .box1 {
+      flex: 1;
+      background-color: orange;
+      color: white;
+      font-size: 8vh;
+      height: 100vh;
+
+
+    }
+
+    .box2 {
+      flex: 1;
+      background-color: darkblue;
+      color: white;
+      font-size: 8vh;
+      width: 50vw;
+      height: 100vh;
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box1">
+      <P>First part</P>
+    </div>
+
+    <div class="box2">
+      <p>Second part</p>
+    </div>
+  </div>
+</body>
+
+</html>

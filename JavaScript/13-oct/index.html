@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript code</title>
+    <style>
+      .header {
+        border: 2px black solid;
+        width: fit-content;
+        padding: 5em;
+        text-align: center;
+        background-color: burlywood;
+        color: black;
+        margin-left: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to your average calcualtor</h1>
+      <h2>Your summation is :</h2>
+      <h3 id="sum">SUM</h3>
+      <h2>Your average is :</h2>
+      <h3 id="average">AVG</h3>
+    </div>
+    <script>
+      var m = parseInt(prompt("enter your Math grade"));
+      var a = parseInt(prompt("enter your Math grade"));
+      var e = parseInt(prompt("enter your Math grade"));
+      var b = parseInt(prompt("enter your Math grade"));
+      var c = parseInt(prompt("enter your Math grade"));
+      var r = parseInt(prompt("enter your Math grade"));
+      const x = 6;
+      var sum = m + e + a + b + c + r;
+      document.getElementById("sum").innerHTML = "SUM".value = sum;
+
+      var avg = sum / x;
+
+      if (50 <= avg && avg < 60) {
+        document.getElementById("average").innerHTML = "PASS";
+      } else if (60 <= avg && avg < 70) {
+        document.getElementById("average").innerHTML = "AVERAGE";
+      } else if (70 <= avg && avg < 80) {
+        document.getElementById("average").innerHTML = "GOOD";
+      } else if (80 <= avg && avg < 90) {
+        document.getElementById("average").innerHTML = "VERY GOOD";
+      } else if (90 <= avg && avg <= 100) {
+        document.getElementById("average").innerHTML = "Excellent";
+      } else {
+        document.getElementById("average").innerHTML = "FAILED";
+      }
+
+      // var arr = ["FCB", "RMD", "PSG", "ACM", "ATM"];
+      // console.log(arr);
+      // var newarr = console.log(arr.reverse());
+
+      // var students = [
+      //   {
+      //     type: "names",
+      //     list: ["monther", "ahmad", "ashraf"],
+      //   },
+      //   {
+      //     type: "age",
+      //     list: ["23", "24", "25"],
+      //   },
+      // ];
+      // console.log(students);
+
+      // var UCL = [
+      //   ["Barca", "Rmadrid", "ATmadrid", "Sevilla"],
+      //   ["Juve", "Inter", "Naboli", "Atlanta"],
+      //   ["PSG", "Marseille", "Monaco"],
+      //   ["Liverpool", "ManCity", "Totnham", ["ManUnited", "Arsenal"]],
+      // ];
+      // var NUCL = console.log(UCL.reverse());
+
+      var arr = [];
+      var i;
+      for (i = 1; i <= 10; i++) {
+        arr.push(i);
+      }
+      console.log(arr);
+    </script>
+  </body>
+</html>

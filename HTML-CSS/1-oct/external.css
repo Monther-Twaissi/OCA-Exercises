@@ -1,0 +1,29 @@
+body {
+  background-color: khaki;
+}
+
+div {
+  background-color: white;
+  border: black 2px solid;
+}
+
+#text3 {
+  border: red dotted 3px;
+  background-color: white;
+}
+
+.redH {
+  color: red;
+}
+
+.redText {
+  color: red;
+}
+
+.word {
+  background-color: yellow;
+}
+
+.word2 {
+  background-color: burlywood;
+}

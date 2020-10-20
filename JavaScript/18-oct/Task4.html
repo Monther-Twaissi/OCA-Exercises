@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task #4</title>
+  </head>
+  <body>
+    <h1 style="color: teal">Oct,19.2020</h1>
+
+    <script>
+      alert("Please enter your information carfully and as asked");
+      var x = prompt("Please inter your job");
+      var y = prompt("Please inter your geographic location");
+      var z = prompt("Please inter yor partner's Name ");
+      var a = prompt("PLease inter the number of kids you have");
+
+      function tellFortune(x, y, z, a) {
+        document.write(
+          "<h1>",
+          "You are an/a " +
+            x +
+            ", in " +
+            y +
+            ", and married to " +
+            z +
+            " with " +
+            a +
+            " kids",
+          "</h1>"
+        );
+      }
+
+      tellFortune(x, y, z, a);
+    </script>
+  </body>
+</html>

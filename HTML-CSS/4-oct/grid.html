@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercise #1 Grid</title>
+
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: 65% 30%;
+      height: 100vh;
+      grid-gap: 1em;
+    }
+
+    /* #nav {
+      margin-top: 1em;
+      width: 100%;
+      height: 10em;
+      background-color: black;
+    }*/
+
+    .box1 {
+
+      background-color: black;
+      grid-column: 1/4;
+      grid-row: 1/4;
+
+    }
+
+    .box2 {
+
+      background-color: green;
+      grid-column: 1/2.7;
+      grid-row: 4/13;
+    }
+
+    .box3 {
+
+      background-color: orange;
+      grid-column: 2/4;
+      grid-row: 4/13;
+    }
+
+    .box4 {
+
+      background-color: blue;
+      grid-column: 1/4;
+      grid-row: 13/20;
+    }
+
+    /*.footer {
+      margin-top: 1em;
+      background-color: blue;
+      height: 15em;
+      width: 99vw;
+    }*/
+  </style>
+</head>
+
+<body>
+  <nav id="nav"></nav><br>
+  <div class="grid">
+    <div class="box1"></div>
+    <div class="box2"> </div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+  </div>
+  <footer>
+    <div class="footer"></div>
+  </footer>
+</body>
+
+</html>

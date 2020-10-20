@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 3</title>
+  </head>
+  <body>
+    <script>
+      var arr = [];
+      var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+      // function oddNumbers() {
+      //   for ( let i = 0; i < numbers.length; i++) {
+      //     if (i % 2 != 0) {
+      //       arr.push(i);
+      //     }
+      //   }
+      //   return arr;
+      // }
+      // console.log(oddNumbers(numbers));
+
+      // *****************//|\\**************
+
+      // function whileArr() {
+      //   let i = 0;
+      //   while (i < numbers.length) {
+      //     if (i % 2 != 0) {
+      //       arr.push(i);
+      //     }
+      //     i++;
+      //   }
+
+      //   return arr;
+      // }
+      // console.log(whileArr(numbers));
+
+      // *****************//|\\**************
+
+      // function aveArray() {
+      //   let i = 0;
+      //   let sum = 0;
+      //   for (i = 0; i <= numbers.length; i++) {
+      //     sum += i;
+      //   }
+      //   return (numbers = sum / numbers.length);
+      // }
+      // console.log(aveArray(numbers));
+
+      // *****************//|\\**************
+      // var n = prompt("inter your number");
+      function factorial(n) {
+        var fac = n;
+        if (n == 0 || n == 1) return 1;
+        while (n > 1) {
+          n--;
+          fac *= n;
+        }
+        return fac;
+      }
+      console.log(factorial(5));
+      // alert("the result is", factorial(n));
+    </script>
+  </body>
+</html>
