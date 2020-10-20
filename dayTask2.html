@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+
+    <style>
+      .account {
+        border: 2px solid black;
+        width: 30vw;
+        padding: 1em;
+        background-color: brown;
+        color: white;
+        border-radius: 3%;
+        margin: 15vw;
+      }
+
+      .input {
+        border-radius: 12px;
+        width: 100%;
+        margin-bottom: 0.5em;
+        padding-left: 20px;
+      }
+
+      li {
+        display: flex;
+        list-style: none;
+      }
+
+      i {
+        padding: 5px;
+        position: absolute;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="account">
+      <h1 style="text-align: center">Create an account</h1>
+      <hr style="background-color: white" />
+      <form
+        style="margin-top: 3em"
+        name="myForm"
+        onsubmit="return (validate(),validateEmail()),validatePassword()"
+        onclick="return(addDashes())"
+      >
+        <!--First and Last Name entry-->
+
+        <li>
+          <i class="fas fa-user"></i>
+          <input
+            class="input"
+            type="text"
+            name="Name"
+            id="firstname"
+            placeholder="     Name"
+          /><br />
+        </li>
+        <!--Email-->
+        <li>
+          <i class="fas fa-envelope"></i>
+          <input
+            class="input"
+            type="text"
+            name="Email"
+            placeholder="     Email"
+          /><br />
+        </li>
+        <!--Number -->
+        <li>
+          <i class="fas fa-phone"></i>
+          <input
+            class="input"
+            type="text"
+            name="Number"
+            placeholder="     Mobile Number"
+          /><br />
+        </li>
+        <!--Passworld -->
+        <li>
+          <i class="fas fa-unlock-alt"></i>
+          <input
+            class="input"
+            type="password"
+            id="pass"
+            name="password"
+            placeholder="     Passworld"
+          />
+          <br />
+        </li>
+        <input type="checkbox" onclick="hidePass()" />Show Passwoed
+        <br />
+        <!--submit-->
+        <input
+          type="checkbox"
+          id="accept-terms"
+          value="1"
+          onclick="terms_changed(this)"
+        />
+        <label for="text">I agree to the terms and conditions</label>
+        <br />
+        <input
+          type="submit"
+          id="submit_button"
+          disabled
+          value="Creat Accont"
+          style="
+            margin-left: 65%;
+            width: 12em;
+            font-weight: bold;
+
+            border-radius: 25px;
+            padding: 0.5em 1em;
+            margin-top: 1em;
+          "
+        />
+      </form>
+    </div>
+
+    <script>
+      function validate() {
+        if (document.myForm.Name.value == "") {
+          alert("Please provide your name!");
+          document.myForm.Name.focus();
+          return false;
+        }
+        if (document.myForm.Email.value == "") {
+          alert("Please provide your Email!");
+          document.myForm.EMail.focus();
+          return false;
+        }
+        return true;
+      }
+      function validateEmail() {
+        var emailID = document.myForm.Email.value;
+        atpos = emailID.indexOf("@");
+        dotpos = emailID.lastIndexOf(".");
+
+        if (atpos < 1 || dotpos - atpos < 4) {
+          alert("Please enter correct email ID");
+          document.myForm.Email.focus();
+          return false;
+        }
+        return true;
+      }
+
+      function hidePass() {
+        var passCode = document.getElementById("pass");
+        if (passCode.type === "text") {
+          passCode.type = "password";
+        } else {
+          passCode.type = "text";
+        }
+      }
+
+      function validatePassword() {
+        var p = document.getElementById("pass").value,
+          errors = [];
+        if (p.search(/[A-Z]/) < 0) {
+          errors.push(
+            "Your password must contain at least one CAPITAL letter."
+          );
+        }
+        if (p.search(/[0-9]/) < 0) {
+          errors.push("Your password must contain at least one digit.");
+        }
+        if (p.search(/[/?!$^@#0%&*/]/) < 0) {
+          errors.push(
+            "Your password must contain at least one special caracter."
+          );
+        }
+        if (errors.length > 0) {
+          alert(errors.join("\n"));
+          return false;
+        }
+        return true;
+      }
+
+      function terms_changed(termsCheckBox) {
+        if (termsCheckBox.checked) {
+          document.getElementById("submit_button").disabled = false;
+        } else {
+          document.getElementById("submit_button").disabled = true;
+        }
+      }
+    </script>
+  </body>
+</html>
