@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20-oct OOP</title>
+  </head>
+  <body>
+    <script>
+      class person {
+        constructor(id, name, number) {
+          this.id = id;
+          this.name = name;
+          this.number = number;
+        }
+        greeting() {
+          return console.log("Welcom" + this.name);
+        }
+        arrGreeting = () =>
+          console.log(
+            `Agent:  ${this.id}  Name:  ${this.name}  ID:  ${this.id}  Job:  ${this.job}`
+          );
+      }
+
+      class car {
+        constructor(id, type, year) {
+          this.id = id;
+          this.type = type;
+          this.year = year;
+        }
+        start() {
+          return console.log(this.type + " is Ready to go");
+        }
+      }
+
+      class animal {
+        constructor(id, name, isPet) {
+          this.id = id;
+          this.name = name;
+          this.isPet =
+            name == "dog" || name == "cat"
+              ? "Yes, its Home Animal"
+              : "NO!, Not A Pet";
+        }
+
+        animalInfo = () =>
+          console.log(
+            "Animal ID: " +
+              this.id +
+              " Animal Name: " +
+              this.name +
+              "... is the animal considered as pet ? " +
+              this.isPet
+          );
+      }
+      person.prototype.job = "Full Stack Developer";
+      let monther = new person("26-A", " Monther ", 962778982309);
+      monther.greeting();
+      monther.arrGreeting();
+
+      let animalOne = new animal(2, "Dog");
+      animalOne.animalInfo();
+    </script>
+  </body>
+</html>
